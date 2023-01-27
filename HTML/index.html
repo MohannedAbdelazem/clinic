@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>الحجز</title>
+	<link rel="stylesheet" href="../CSS/style.css">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+
+
+	<div class="container">
+		<div class="container-time">
+				<h2 class="heading">أوقات العمل</h2>
+				<h3 class="heading-days">السبت:7-10</h3>
+				<h3 class="heading-days">الأحد:7-10</h3>
+				<h3 class="heading-days">الاثنين:7-10</h3>
+				<h3 class="heading-days">الثلثاء:5-7</h3>
+				<h3 class="heading-days">الأربعاء:8-10</h3>
+				<hr>
+				<h4 class="heading-phone">:للحجز عن طريق الهاتف</h4>
+				<p>-01000161168</p>
+				<p>-01210222492</p>
+		</div>
+
+		<div class="container-form" >
+				<form action="https://formsubmit.co/mohannedabdelazem222@gmail.com" method="POST">
+					<input type="hidden" name="_captcha" value="false">
+					<h2 class="heading heading-yellow">الحجز الأونلاين</h2>
+					<div class="form-field">
+						<input type="text" dir="rtl" name="name" placeholder="الاسم" required>
+						<p style="font-size: 20px;">الاسم</p>
+					</div>
+					<div class="form-field">
+						<input type="tel" name="telephone" onkeypress="return onlyNumberKey(event)" required>
+						<p>رقم الهاتف</p>
+					</div>
+					<div class="form-field">
+						<select name="select" id="#">
+							<option value="saturday">السبت</option>
+							<option value="sunday">الأحد</option>
+							<option value="monday">الاثنين</option>
+							<option value="teusday">الثلثاء</option>
+							<option value="wednesday">الأربعاء</option>
+						</select>
+						<p>يوم الحجز</p>
+					</div>
+
+					<button class="btn">حجز</button>
+				</form>
+		</div>
+	</div>
+</div>	
+	<script>
+		function onlyNumberKey(evt) {
+		  var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+		  if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+			  return false;
+		  return true;
+	  }
+
+	</script>
+</body>
+</html>
